@@ -87,7 +87,7 @@ nav {
 header {
     height: 712px;
         
-    background: url('/images/png/image\ 1.png');
+    background: url('./images/png/image\ 1.png');
     background-size: cover;
     background-position: 0px -45px;
 }
@@ -115,22 +115,22 @@ header {
 }
 
 .content-img-1 {
-    background: url('/images/png/image\ 2.png');
+    background: url('./images/png/image\ 2.png');
     background-size: cover;
 }
 
 .content-img-2 {
-    background: url('/images/png/image\ 3.png');
+    background: url('./images/png/image\ 3.png');
     background-size: cover;
 }
 
 .content-img-3 {
-    background: url('/images/png/image\ 4.png');
+    background: url('./images/png/image\ 4.png');
     background-size: cover;
 }
 
 .content-img-4 {
-    background: url('/images/png/image\ 5.png');
+    background: url('./images/png/image\ 5.png');
     background-size: cover;
 }
 

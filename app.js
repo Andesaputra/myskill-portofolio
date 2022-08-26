@@ -1,5 +1,16 @@
-var trigger = "backnav";
-var scrollTrigger = 60;
+//hamburger menu
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar_menu');
+
+menu.addEventListener('click',function(){
+ menu.classList.toggle('is-active');
+ menuLinks.classList.toggle('active');
+});
+
+
+//scroll menu
+let trigger = "backnav";
+let scrollTrigger = 60;
 
 window.onscroll = function() {
   if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {

@@ -37,14 +37,17 @@
           <li class="navbar_item">
             <a href="" class="navbar_links">contact</a>
           </li>
+          <li class="navbar_item navbar_links">
+            <input
+              type="search"
+              id="search"
+              name="search"
+              placeholder="Search..."
+            />
+          </li>
           <li class="navbar_item">
             <a href="" class="navbar_links"
-              ><input
-                type="search"
-                id="search"
-                name="search"
-                placeholder="Search..." />
-              <img
+              ><img
                 src="./images/svg/search.svg"
                 width="24px"
                 height="24px"
@@ -126,13 +129,17 @@
 
       <!-- promo -->
       <section class="promo">
-        <h3 class="promo-text">NEW COLLECTION<br />&<br />NEW SALE</h3>
-        <div class="content-promo">
-          <img src="./images/png/image 6-1.png" alt="" />
-        </div>
-        <div class="content-promo">
-          <img src="./images/png/image 6-2.png" alt="" />
-        </div>
+        <article class="promo-container">
+          <div class="promo-text-container">
+            <h3 class="promo-text">NEW COLLECTION<br />&<br />NEW SALE</h3>
+          </div>
+          <div class="content-promo">
+            <img src="./images/png/image 6-1.png" alt="" />
+          </div>
+          <div class="content-promo">
+            <img src="./images/png/image 6-2.png" alt="" />
+          </div>
+        </article>
       </section>
 
       <!-- bestseller -->
@@ -195,7 +202,7 @@
     <footer>
       <div class="footer_container">
         <div class="footer_container_content">
-          <img src="./images/svg/logo.svg" alt="" />
+          <img src="./images/svg/logo.svg" alt="" height="200px" />
         </div>
         <div class="footer_container_content">
           <h1>INFORMATION</h1>
@@ -212,33 +219,45 @@
           <h1>FOLLOW US</h1>
           <br />
           <div class="followus_content">
-            <a href="" class="followus_content_links"
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="followus_content_links"
               ><img
                 src="./images/svg/Twitter.svg"
-                alt=""
-                width="25px"
-                height="25px"
+                alt="twitter"
+                width="30px"
+                height="30px"
             /></a>
-            <a href="" class="followus_content_links"
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="followus_content_links"
               ><img
                 src="./images/svg/Instagram.svg"
-                alt=""
-                width="25px"
-                height="25px"
+                alt="instagram"
+                width="30px"
+                height="30px"
             /></a>
-            <a href="" class="followus_content_links"
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              class="followus_content_links"
               ><img
                 src="./images/svg/Facebook.svg"
-                alt=""
-                width="25px"
-                height="25px"
+                alt="facebook"
+                width="30px"
+                height="30px"
             /></a>
-            <a href="" class="followus_content_links"
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              class="followus_content_links"
               ><img
                 src="./images/svg/YouTube.svg"
-                alt=""
-                width="25px"
-                height="25px"
+                alt="youtube"
+                width="30px"
+                height="30px"
             /></a>
           </div>
           <br />
@@ -247,7 +266,9 @@
             <br />
             <div class="subscribe_content">
               <input type="email" id="email" name="email" placeholder="email" />
-              <div class="btn_subscribe"><button>SUBSCRIBE</button></div>
+              <a href="mailto:#"
+                ><button class="btn_subscribe" href="#">SUBSCRIBE</button></a
+              >
             </div>
           </div>
         </div>

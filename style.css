@@ -45,6 +45,19 @@ strong {
     color: var(--pr-rose);
 }
 
+.content-bestseller-text{
+    font-size: 35px;
+    position: relative;
+    text-align: center;
+    color: var(--pr-blue);
+}
+
+
+
+.card-item p {
+    font-weight: 300;
+    font-size: 18px;
+}
 
 /* nav */
 .navbar{
@@ -58,6 +71,14 @@ strong {
     padding: 0 8rem;
 
     width: 100%;
+    z-index: 99;
+}
+
+nav.backnav {
+    background: rgba(245,245,245,0.9);
+    transition: all 0.8s ease-in-out;
+    box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
+    margin-top: 0px;
 }
 
 .navbar_logo{
@@ -135,11 +156,6 @@ strong {
     align-items: center;
     padding: 3px 20px;
     border-radius: 25px;
-}
-
-.navbar:hover{
-    background: rgba(245,245,245,0.5);
-    transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 960px) {
@@ -306,6 +322,7 @@ header>h1 {
 .btn-content-main:hover {
     background-color: var(--ne-background-white);
     color: var(--pr-blue);
+    transition: all 0.3s ease-in-out;
 }
 
 /* promo */
@@ -327,14 +344,80 @@ header>h1 {
     margin: auto;
 }
 
+.promo-text{
+    font-size: 3em;
+    position: absolute;
+    align-self: center;
+    text-align: center;
+    color: white;
+
+    z-index: 98;
+}
+
+.promo:hover {
+    
+}
+
+/* Bestseller */
+
+.content-bestseller {
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 130px;
+    position: relative;
+  }
+  
+#carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+  
+#carousel::-webkit-scrollbar {
+height: 0;
+}
+
+.prev, .next{
+    width: 50px;
+}
+
+.prev{
+    position: absolute;
+    left: -8%;
+    bottom: 50%;
+}
+
+.next{
+    position: absolute;
+    right: -8%;
+    bottom: 50%;
+}
+
+  
+#content {
+    display: grid;
+    grid-gap: 30px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+  
+.item {
+    width: 16.5rem;
+}
+
 /* footer */
 
 footer {
     background :var(--ne-background-gray);
     font-family: 'Montserrat';
     color: #14213D;
-
-    margin-top: 4rem;
 }
 
 .footer_container{
@@ -416,4 +499,26 @@ footer {
 .copyright_text{
     text-align: center;
     font-weight: bold;
+}
+
+
+/* media query */
+@media (max-width: 1000px) {
+    body {
+        min-height: 100vh;
+        width: 100vw;
+    }
+
+    .content-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content-img {
+        width: 500px;
+        height: 500px;
+        order: -1;
+    }
 }

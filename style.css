@@ -329,7 +329,7 @@ header>h1 {
 
 /* footer */
 
-.footer {
+footer {
     background :var(--ne-background-gray);
     font-family: 'Montserrat';
     color: #14213D;

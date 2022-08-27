@@ -295,7 +295,7 @@ header>h1 {
 /* Bestseller */
 
 .content-bestseller {
-    margin: 6rem 0 8rem 0;
+    margin: 6rem 0;
 }
 
 #wrapper {
@@ -350,12 +350,36 @@ height: 0;
     width: auto;
 }
 
+.btn-bestseller-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-bestseller {
+    position: center;
+    
+    background-color: var(--pr-blue);
+    font-size: 10px;
+    
+    border: var(--pr-blue) 1px solid;
+    border-radius: 25px;
+    padding: 8px 20px;
+    color: var(--ne-text-grayish);
+}
+
+.btn-bestseller:hover {
+    background-color: var(--ne-background-white);
+    color: var(--pr-blue);
+    transition: 0.2s ease-in-out;
+}
+
 /* footer */
 
 footer {
     background :var(--ne-background-gray);
     font-family: 'Montserrat';
-    color: #14213D;
+    color: var(--pr-blue);
 }
 
 .footer_container{
@@ -417,8 +441,16 @@ footer {
     border: 1px solid var(--pr-blue);
 }
 
-.footer_container_content p{
-    font-size: 20px;
+.footer_container_content a{
+    font-size: 16px;
+}
+
+.footer_logo {
+    align-self: center;
+}
+
+.footer_logo img {
+    height: 140px;
 }
 
 .about_content{

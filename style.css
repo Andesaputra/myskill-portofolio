@@ -277,7 +277,10 @@ header>h1 {
     background: rgba(0,0,0,0.5);
     opacity: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .promo-text {
